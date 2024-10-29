@@ -1,8 +1,9 @@
 //import pluginTailwindcss from "eslint-plugin-tailwindcss";
-import simpleImportSort from "eslint-plugin-simple-import-sort";
 //import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import reactRecommended from "eslint-plugin-react";
 import eslintPluginReactHooks from "eslint-plugin-react-hooks"
+import simpleImportSort from "eslint-plugin-simple-import-sort";
+
 export default [
   //...pluginTailwindcss.configs["flat/recommended"],
   // {
@@ -35,9 +36,14 @@ export default [
       "simple-import-sort/exports": "error",
     },
   },
-  //reactRecommended,
+  reactRecommended.configs.flat["jsx-runtime"],
   //eslintPluginPrettierRecommended,
-  //eslintPluginReactHooks,
+  {
+    name: "react-hooks",
+    plugins: {
+      reactHooks: eslintPluginReactHooks.configs["recommended"],
+    },
+  },
   {
     rules: {
       "react/prop-types": "off",
