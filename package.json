@@ -4,6 +4,7 @@
   "main": "index.mjs",
   "author": "PedroAugustoRamalhoDuarte <pedroaugustorduarte@gmail.com>",
   "license": "MIT",
+  "private": false,
   "type": "module",
   "scripts": {
     "lint": "eslint ."
