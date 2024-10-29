@@ -1,24 +1,24 @@
-//import pluginTailwindcss from "eslint-plugin-tailwindcss";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import reactRecommended from "eslint-plugin-react";
 import eslintPluginReactHooks from "eslint-plugin-react-hooks";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
+import pluginTailwindcss from "eslint-plugin-tailwindcss";
 
 export default [
-  //...pluginTailwindcss.configs["flat/recommended"],
-  // {
-  //   name: "tailwindcss/rules",
-  //   plugins: {
-  //     tailwindcss: pluginTailwindcss,
-  //   },
-  //   rules: {
-  //     "tailwindcss/classnames-order": "error",
-  //     "tailwindcss/no-contradicting-classname": "error",
-  //     "tailwindcss/enforces-shorthand": "error",
-  //     "tailwindcss/no-custom-classname": "off",
-  //     "tailwindcss/no-unnecessary-arbitrary-value": "error",
-  //   },
-  // },
+  ...pluginTailwindcss.configs["flat/recommended"],
+  {
+    name: "tailwindcss/rules",
+    plugins: {
+      tailwindcss: pluginTailwindcss,
+    },
+    rules: {
+      "tailwindcss/classnames-order": "error",
+      "tailwindcss/no-contradicting-classname": "error",
+      "tailwindcss/enforces-shorthand": "error",
+      "tailwindcss/no-custom-classname": "off",
+      "tailwindcss/no-unnecessary-arbitrary-value": "error",
+    },
+  },
   {
     name: "switch-dreams/rules",
     rules: {
