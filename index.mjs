@@ -1,7 +1,7 @@
 //import pluginTailwindcss from "eslint-plugin-tailwindcss";
-//import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import reactRecommended from "eslint-plugin-react";
-import eslintPluginReactHooks from "eslint-plugin-react-hooks"
+import eslintPluginReactHooks from "eslint-plugin-react-hooks";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 
 export default [
@@ -22,8 +22,11 @@ export default [
   {
     name: "switch-dreams/rules",
     rules: {
-      "no-console": ["error", {allow: ["warn", "error"]}],
-      "no-unused-vars": ["error", {vars: "all", args: "after-used", ignoreRestSiblings: true}],
+      "no-console": ["error", { allow: ["warn", "error"] }],
+      "no-unused-vars": [
+        "error",
+        { vars: "all", args: "after-used", ignoreRestSiblings: true },
+      ],
     },
   },
   {
@@ -37,7 +40,7 @@ export default [
     },
   },
   reactRecommended.configs.flat["jsx-runtime"],
-  //eslintPluginPrettierRecommended,
+  eslintPluginPrettierRecommended,
   {
     name: "react-hooks",
     plugins: {
