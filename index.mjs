@@ -39,8 +39,9 @@ export default [
       "simple-import-sort/exports": "error",
     },
   },
-  reactRecommended.configs.flat["jsx-runtime"],
   eslintPluginPrettierRecommended,
+  // React
+  reactRecommended.configs.flat["jsx-runtime"],
   {
     name: "react-hooks",
     plugins: {
