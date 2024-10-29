@@ -1,11 +1,11 @@
-# eslint-config-switch-dreams
+# @switchdreams/lint-config
 
 This package provides Switch Dreams' eslint and prettier config as an extensible shared config.
 
 ## Installation
 
 ```bash
-npm install --save-dev eslint-config-switch-dreams
+npm install --save-dev @switchdreams/lint-config
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ Usage for eslint > 9.0.0
 
 ```js
 // eslint.config.js
-import eslintConfigSwitchDreams from "eslint-config-switch-dreams";
+import eslintConfigSwitchDreams from "@switchdreams/lint-config";
 
 export default [
   ...eslintConfigSwitchDreams,
@@ -26,11 +26,8 @@ export default [
 
 ```js
 // .prettierrc.mjs
-import switchDreamsConfig from "eslint-config-switch-dreams/prettier";
+import switchDreamsConfig from "@switchdreams/lint-config/prettier";
 
-/**
- * @type {import("prettier").Config}
- */
 const config = {
   ...switchDreamsConfig,
   // ...your overrides

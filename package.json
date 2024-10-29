@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-switch-dreams",
+  "name": "@switchdreams/lint-config",
   "version": "0.0.1",
   "main": "index.mjs",
   "author": "PedroAugustoRamalhoDuarte <pedroaugustorduarte@gmail.com>",
