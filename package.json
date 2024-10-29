@@ -1,18 +1,26 @@
 {
   "name": "eslint-config-switch-dreams",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "index.mjs",
   "author": "PedroAugustoRamalhoDuarte <pedroaugustorduarte@gmail.com>",
   "license": "MIT",
-  "peerDependencies": {
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
     "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.36.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-tailwindcss": "^3.17.4"
   },
   "devDependencies": {
     "eslint": "^9.0.0"
+  },
+  "peerDependencies": {
+    "tailwind": "^4.0.0"
   }
 }
