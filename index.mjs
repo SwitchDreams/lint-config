@@ -5,6 +5,7 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import pluginTailwindcss from "eslint-plugin-tailwindcss";
 
 export default [
+  { files: ["**/*.{js,jsx,ts,tsx,test.jsx,stories.jsx}"] },
   ...pluginTailwindcss.configs["flat/recommended"],
   {
     name: "tailwindcss/rules",

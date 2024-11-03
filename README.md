@@ -5,7 +5,7 @@ This package provides Switch Dreams' eslint and prettier config as an extensible
 ## Installation
 
 ```bash
-npm install --save-dev @switchdreams/lint-config
+yarn add -D @switchdreams/lint-config eslint
 ```
 
 ## Usage
@@ -22,6 +22,7 @@ export default [
     // Add your overrides here
   },
 ]
+
 ```
 
 ```js
@@ -34,6 +35,7 @@ const config = {
 };
 
 export default config;
+
 ```
 
 ## Requirements
