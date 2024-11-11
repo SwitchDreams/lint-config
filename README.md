@@ -13,7 +13,7 @@ yarn add -D @switchdreams/lint-config eslint
 Usage for eslint > 9.0.0
 
 ```js
-// eslint.config.js
+// eslint.config.mjs
 import eslintConfigSwitchDreams from "@switchdreams/lint-config";
 
 export default [
