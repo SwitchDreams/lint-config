@@ -25,9 +25,6 @@ jobs:
           # Update the package.json version
           yarn version --new-version ${{ github.event.release.tag_name }}
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - run: yarn build
       - run: yarn publish --new-version ${{ github.event.release.tag_name }} --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
