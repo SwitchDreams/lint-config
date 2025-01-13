@@ -5,7 +5,7 @@ This package provides Switch Dreams' eslint and prettier config as an extensible
 ## Installation
 
 ```bash
-yarn add -D @switchdreams/lint-config eslint
+pnpm add -D @switchdreams/lint-config eslint
 ```
 
 ## Usage
