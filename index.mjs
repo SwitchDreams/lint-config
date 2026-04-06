@@ -46,7 +46,7 @@ export default [
   {
     name: "react-hooks",
     plugins: {
-      reactHooks: eslintPluginReactHooks.configs["recommended"],
+      reactHooks: eslintPluginReactHooks.configs["recommended-latest"],
     },
   },
   {

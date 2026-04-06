@@ -1,6 +1,6 @@
 {
   "name": "@switchdreams/lint-config",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "main": "index.mjs",
   "author": "PedroAugustoRamalhoDuarte <pedroaugustorduarte@gmail.com>",
   "license": "MIT",
@@ -21,18 +21,18 @@
     "./prettier": "./prettier.mjs"
   },
   "dependencies": {
-    "eslint": "^9.36.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-tailwindcss": "^3.18.2",
     "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.6.14"
+    "prettier-plugin-tailwindcss": "^0.7.2"
   },
   "devDependencies": {
-    "eslint": "^9.36.0",
+    "eslint": "^10.2.0",
     "tailwindcss": "^3.4.14"
   },
   "peerDependencies": {
